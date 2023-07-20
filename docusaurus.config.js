@@ -7,13 +7,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Mahot Descelliers',
-  url: 'https://mahot.xyz/',
+  url: 'https://descelliers.com/',
   baseUrl: '/',
   organizationName: 'mahotd',
-  projectName: 'mahotd',
+  projectName: 'mahotd.github.io',
   favicon: 'img/favicon.ico',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  deploymentBranch: 'deploy',
+  trailingSlash: true,
 
   i18n: {
     defaultLocale: 'en',
