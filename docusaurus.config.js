@@ -14,7 +14,7 @@ const config = {
   favicon: 'img/favicon.ico',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  deploymentBranch: 'deploy',
+  deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
   i18n: {
