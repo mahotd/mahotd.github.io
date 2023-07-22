@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmahotd=self.webpackChunkmahotd||[]).push([[903],{7181:e=>{e.exports=JSON.parse('{"label":"electronics","permalink":"/blog/tags/electronics","allTagsPath":"/blog/tags","count":1}')}}]);

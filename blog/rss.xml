@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Mahot Descelliers Blog</title>
+        <link>https://mahotd.github.io/blog</link>
+        <description>Mahot Descelliers Blog</description>
+        <lastBuildDate>Wed, 19 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Making a glass block lamp]]></title>
+            <link>https://mahotd.github.io/blog/glass-block-lamp</link>
+            <guid>https://mahotd.github.io/blog/glass-block-lamp</guid>
+            <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[I absolutely love mood lighting !]]></description>
+            <content:encoded><![CDATA[<div style="text-align:center"><img loading="lazy" src="/assets/images/glass-block-lamp-1-2cf8c12a40621e05044ca824ba8652bc.jpg" alt="Glass block lamp" width="400" class="img_ev3q"></div><br><p>I absolutely love mood lighting !</p><p>I have several lava lamps, weird bulbs and fun lights in my home, and adding one that I made myself to the collection seemed like a fun idea.</p><p>Furthermore, I've been wanting to have a glass block lamp for quite some time now, so the only logical thing to do was to make one myself !</p><p>I wanted to improve on the visual concept a bit: I wanted to make it a bit more interesting than the basic ones using only a white light source and a set of colored filters, so I decided to add some fancy RGB electronics to it 🌈.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="materials">Materials<a href="#materials" class="hash-link" aria-label="Direct link to Materials" title="Direct link to Materials">​</a></h2><p>For this project, I used the following materials:</p><ul><li>A glass block (I used a 19x19x8cm one which I bough at my local hardware store, Leroy Merlin)</li><li>A 3D printer (I used my Prusa Mini+) with black PLA and white PLA</li><li>An ESP32 microcontroller (I used an <a href="https://www.adafruit.com/product/5400" target="_blank" rel="noopener noreferrer">Adafruit ESP32 Feather V2</a>)</li><li>3 Adafruit RGBW NeoPixel sticks (I used <a href="https://www.adafruit.com/product/2867" target="_blank" rel="noopener noreferrer">these ones</a>)</li></ul><div class="theme-admonition theme-admonition-caution alert alert--warning admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>ESP32 microcontroller compatibility</div><div class="admonitionContent_S0QG"><p>WLED is currently not fully compatible with ESP32-S2, ESP32-S3 or ESP32-C3 microcontrollers, see <a href="https://github.com/Aircoookie/WLED/issues/966" target="_blank" rel="noopener noreferrer">#966</a>, <a href="https://github.com/Aircoookie/WLED/issues/2735" target="_blank" rel="noopener noreferrer">#2735</a>, <a href="https://github.com/Aircoookie/WLED/issues/1940" target="_blank" rel="noopener noreferrer">#1940</a></p></div></div><p>TODO: keep writing this article !</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="sources">Sources<a href="#sources" class="hash-link" aria-label="Direct link to Sources" title="Direct link to Sources">​</a></h3><ul><li>The project on GitHub (for CAD and EDA files, WLED config...)</li></ul>]]></content:encoded>
+            <category>electronics</category>
+            <category>3d printing</category>
+            <category>light</category>
+            <category>rgb</category>
+            <category>neopixel</category>
+            <category>wled</category>
+        </item>
+    </channel>
+</rss>

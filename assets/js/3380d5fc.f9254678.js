@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmahotd=self.webpackChunkmahotd||[]).push([[939],{3211:a=>{a.exports=JSON.parse('{"label":"3d printing","permalink":"/blog/tags/3-d-printing","allTagsPath":"/blog/tags","count":1}')}}]);
