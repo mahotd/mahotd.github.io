@@ -11,7 +11,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'mahotd',
   projectName: 'mahotd.github.io',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/mahotd.ico',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: 'gh-pages',
@@ -48,7 +48,7 @@ const config = {
         title: 'Mahot Descelliers',
         logo: {
           alt: 'Mahot Descelliers',
-          src: 'img/logo.png',
+          src: 'img/navbar-logo.png',
           href: '/blog',
         },
         items: [
