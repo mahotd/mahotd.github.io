@@ -43,9 +43,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // TODO: add social card
-      // // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.jpg',
       navbar: {
         title: 'Mahot Descelliers',
         logo: {
