@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mahotd.github.io/blog"/>
     <subtitle>Mahot Descelliers Blog</subtitle>
-    <icon>https://mahotd.github.io/img/favicon.ico</icon>
+    <icon>https://mahotd.github.io/img/mahotd.ico</icon>
     <entry>
         <title type="html"><![CDATA[Making a glass block lamp]]></title>
         <id>https://mahotd.github.io/blog/glass-block-lamp</id>
