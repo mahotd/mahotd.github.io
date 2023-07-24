@@ -1,0 +1,22 @@
+{
+    "name": "Mahot Descelliers",
+    "short_name": "Mahot Descelliers",
+    "theme_color": "#2196f3",
+    "background_color": "#1b1b1d",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./index.html",
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "https://mahotd.github.io/manifest.json"
+      }
+    ],
+    "icons": [
+      {
+        "src": "img/mahotd.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
