@@ -11,7 +11,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'mahotd',
   projectName: 'mahotd.github.io',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/mahotd.ico',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: 'gh-pages',
@@ -50,7 +50,7 @@ const config = {
         title: 'Mahot Descelliers',
         logo: {
           alt: 'Mahot Descelliers',
-          src: 'img/logo.png',
+          src: 'img/navbar-logo.png',
           href: '/blog',
         },
         items: [
@@ -72,6 +72,80 @@ const config = {
             {
               to: '/blog',
               from: '/',
+            },
+          ],
+        },
+      ],
+      [
+        '@docusaurus/plugin-pwa',
+        {
+          debug: true,
+          offlineModeActivationStrategies: [
+            'appInstalled',
+            'standalone',
+            'queryString',
+          ],
+          pwaHead: [
+            {
+              tagName: 'link',
+              rel: 'icon',
+              href: 'img/mahotd.png',
+            },
+            {
+              tagName: 'link',
+              rel: 'manifest',
+              href: 'manifest.json',
+            },
+            {
+              tagName: 'meta',
+              name: 'theme-color',
+              content: 'rgb(33, 150, 243)',
+            },
+            {
+              tagName: 'meta',
+              name: 'apple-mobile-web-app-capable',
+              content: 'yes',
+            },
+            {
+              tagName: 'meta',
+              name: 'apple-mobile-web-app-status-bar-style',
+              content: '#000',
+            },
+            {
+              tagName: 'link',
+              rel: 'apple-touch-icon',
+              href: 'img/mahotd.png',
+            },
+            {
+              tagName: 'link',
+              rel: 'mask-icon',
+              href: 'img/mahotd.png',
+              color: 'rgb(0, 0, 0)',
+            },
+            {
+              tagName: 'meta',
+              name: 'msapplication-TileImage',
+              content: 'img/mahotd.png',
+            },
+            {
+              tagName: 'meta',
+              name: 'msapplication-TileColor',
+              content: '#000',
+            },
+            {
+              tagName: 'link',
+              rel: 'icon',
+              href: '/img/docusaurus.png',
+            },
+            {
+              tagName: 'link',
+              rel: 'manifest',
+              href: '/manifest.json', // your PWA manifest
+            },
+            {
+              tagName: 'meta',
+              name: 'theme-color',
+              content: 'rgb(33, 150, 243)',
             },
           ],
         },
