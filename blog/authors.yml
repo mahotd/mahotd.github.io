@@ -1,5 +1,5 @@
 mahotd:
   name: Mahot Descelliers
   title: Data Engineer @Withings
-  url: http://localhost:3000/about
+  url: http://mahotd.github.io/about
   image_url: https://github.com/mahotd.png
