@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmahotd=self.webpackChunkmahotd||[]).push([[773],{5617:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/3-d-printing","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Mahot Descelliers\'s blog","blogTitle":"blog"}')}}]);

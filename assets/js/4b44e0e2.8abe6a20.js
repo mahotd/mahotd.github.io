@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmahotd=self.webpackChunkmahotd||[]).push([[560],{6817:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/rgb","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Mahot Descelliers\'s blog","blogTitle":"blog"}')}}]);
