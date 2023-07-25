@@ -43,12 +43,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/social-card.jpg',
+      image: 'img/mahotd-social-card.jpg',
       navbar: {
         title: 'Mahot Descelliers',
         logo: {
           alt: 'Mahot Descelliers',
-          src: 'img/navbar-logo.png',
+          src: 'img/logo.png',
           href: '/blog',
         },
         items: [
