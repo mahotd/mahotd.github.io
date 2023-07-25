@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmahotd=self.webpackChunkmahotd||[]).push([[727],{8270:e=>{e.exports=JSON.parse('{"permalink":"/tags/wled","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Mahot Descelliers\'s blog","blogTitle":"blog"}')}}]);

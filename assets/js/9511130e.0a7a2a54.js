@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmahotd=self.webpackChunkmahotd||[]).push([[100],{116:a=>{a.exports=JSON.parse('{"label":"wled","permalink":"/blog/tags/wled","allTagsPath":"/blog/tags","count":1}')}}]);
