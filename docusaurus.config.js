@@ -29,9 +29,9 @@ const config = {
       ({
         docs: false,
         blog: {
+          routeBasePath: "/",
           blogTitle: 'blog',
           blogDescription: 'Mahot Descelliers\'s blog',
-          routeBasePath: "/blog",
           showReadingTime: true,
           editUrl: 'https://github.com/mahotd/mahotd/edit/main/blog/',
         },
@@ -55,16 +55,15 @@ const config = {
         logo: {
           alt: 'mahotd',
           src: 'img/logo.png',
-          href: '/blog',
+          href: '/',
         },
         items: [
-          {to: '/blog', label: '/blog', position: 'left'},
           {to: '/about', label: '/about', position: 'left'},
         ],
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} Mahot Descelliers. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="/about">Mahot Descelliers</a>. Built with <a href="hhttps://github.com/facebook/docusaurus/">Docusaurus</a>.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -78,8 +77,8 @@ const config = {
         {
           redirects: [
             {
-              to: '/blog',
-              from: '/',
+              from: '/blog',
+              to: '/',
             },
           ],
         },
