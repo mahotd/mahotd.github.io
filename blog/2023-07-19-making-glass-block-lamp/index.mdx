@@ -5,11 +5,15 @@ authors: [mahotd]
 tags: [electronics, 3d printing, light, rgb, neopixel, wled]
 ---
 
-import GlassBlockLamp1 from './img/glass-block-lamp-1.jpg';
+import Image from "@theme/IdealImage";
 
-<div style={{textAlign: 'center'}}>
-    <img src={GlassBlockLamp1} alt="Glass block lamp" width="400"/>
-</div><br/>
+<Image
+  img={require("./img/glass-block-lamp-1.jpg")}
+  alt="The finished glass block lamp"
+  style={{ width: 350, display: 'block', margin: '0 auto' }}
+  caption="The finished glass block lamp"
+/>
+<br />
 
 I absolutely love mood lighting !
 
@@ -18,8 +22,6 @@ I have several lava lamps, weird bulbs and fun lights in my home, and adding one
 Furthermore, I've been wanting to have a glass block lamp for quite some time now, so the only logical thing to do was to make one myself !
 
 I wanted to improve on the visual concept a bit: I wanted to make it a bit more interesting than the basic ones using only a white light source and a set of colored filters, so I decided to add some fancy RGB electronics to it :rainbow:.
-
-<!--truncate-->
 
 ## Materials
 
