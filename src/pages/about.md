@@ -1,5 +1,5 @@
 ---
-title: About
+title: about
 ---
 
 # Hi ! I'm Mahot Descelliers.
