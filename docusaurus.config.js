@@ -49,6 +49,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       image: 'img/mahotd-social-card.jpg',
       navbar: {
         title: 'mahotd',
