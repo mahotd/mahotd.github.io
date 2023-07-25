@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Mahot Descelliers',
+  title: 'mahotd',
   url: 'https://mahotd.github.io/',
   baseUrl: '/',
   organizationName: 'mahotd',
@@ -29,6 +29,8 @@ const config = {
       ({
         docs: false,
         blog: {
+          blogTitle: 'blog',
+          blogDescription: 'Mahot Descelliers\'s blog',
           routeBasePath: "/blog",
           showReadingTime: true,
           editUrl: 'https://github.com/mahotd/mahotd/edit/main/blog/',
@@ -49,9 +51,9 @@ const config = {
     ({
       image: 'img/mahotd-social-card.jpg',
       navbar: {
-        title: 'Mahot Descelliers',
+        title: 'mahotd',
         logo: {
-          alt: 'Mahot Descelliers',
+          alt: 'mahotd',
           src: 'img/logo.png',
           href: '/blog',
         },
