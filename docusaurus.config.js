@@ -60,6 +60,10 @@ const config = {
           {to: '/about', label: '/about', position: 'left'},
         ],
       },
+      footer: {
+        style: 'light',
+        copyright: `Copyright © ${new Date().getFullYear()} Mahot Descelliers. Built with Docusaurus.`,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
