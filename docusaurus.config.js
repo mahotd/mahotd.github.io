@@ -11,7 +11,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'mahotd',
   projectName: 'mahotd.github.io',
-  favicon: 'img/mahotd.ico',
+  favicon: 'img/favicon.ico',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: 'gh-pages',
