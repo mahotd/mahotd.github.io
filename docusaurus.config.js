@@ -32,7 +32,7 @@ const config = {
           routeBasePath: "/",
           blogTitle: 'blog',
           blogDescription: 'Mahot Descelliers\'s blog',
-          showReadingTime: true,
+          blogSidebarCount: 10,
           editUrl: 'https://github.com/mahotd/mahotd/edit/main/blog/',
         },
         theme: {
