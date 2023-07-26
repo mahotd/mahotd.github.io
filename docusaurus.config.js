@@ -62,6 +62,10 @@ const config = {
           src: "https://github.com/mahotd.png",
           href: "/",
           style: {
+            borderRadius: "50%",
+            backgroundImage: "linear-gradient(335deg, #c067db, #0cabf5)",
+            padding: "1px",
+          },
         },
         items: [{ to: "/about", label: "/about", position: "left" }],
       },
