@@ -59,8 +59,9 @@ const config = {
         title: 'mahotd',
         logo: {
           alt: 'mahotd',
-          src: 'img/logo.png',
+          src: 'https://github.com/mahotd.png',
           href: '/',
+          style: { clipPath: 'circle(50%)' }
         },
         items: [
           {to: '/about', label: '/about', position: 'left'},
