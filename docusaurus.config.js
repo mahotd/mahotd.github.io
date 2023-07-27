@@ -64,7 +64,7 @@ const config = {
           style: {
             borderRadius: "50%",
             backgroundImage: "linear-gradient(335deg, #c067db, #0cabf5)",
-            padding: "1px",
+            padding: "2px",
           },
         },
         items: [{ to: "/about", label: "/about", position: "left" }],
