@@ -63,7 +63,7 @@ const config = {
           href: "/",
           style: {
             borderRadius: "50%",
-            backgroundImage: "linear-gradient(335deg, #c067db, #0cabf5)",
+            backgroundImage: "linear-gradient(135deg, #21d4fd, #b721ff)",
             padding: "2px",
           },
         },
