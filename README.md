@@ -39,3 +39,8 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### TODO
+
+- [ ] Add a search bar ?
+- [ ] Use `fontaine` to reduce Cumulative Layout Shift (https://blog.logrocket.com/docusaurus-using-fontaine-reduce-cumulative-layout-shift/)
