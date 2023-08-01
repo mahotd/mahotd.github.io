@@ -6,6 +6,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  /* Custom Infima variables */
+  /*  */
+  /* Infima variables exposed by default */
   --ifm-color-primary: #9349a7;
   --ifm-color-primary-dark: #844296;
   --ifm-color-primary-darker: #7d3e8e;
@@ -18,7 +21,10 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
+  /* Custom Infima variables */
+  /*  */
+  /* Infima variables exposed by default */
   --ifm-color-primary: #d19fe1;
   --ifm-color-primary-dark: #c382d8;
   --ifm-color-primary-darker: #bc73d3;
@@ -29,23 +35,29 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Add a gradient border to the author pic */
-.avatar__photo {
-  background-image: linear-gradient(135deg, #21d4fd, #b721ff);
-  padding: 2px;
+/* Adjust the navbar appearance */
+.navbar {
+  backdrop-filter: blur(12px);
+  background: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+[data-theme="dark"] .navbar {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Add a gradient border to the top of the footer */
-.footer {
-  border-top: 2px solid;
-  border-image: linear-gradient(135deg, #21d4fd, #b721ff) 1;
+/* Adjust article title */
+h2[itemprop="headline"] > a {
+  color: var(--ifm-font-color-base);
+}
+h2[itemprop="headline"] > a:hover {
+  color: var(--ifm-link-color);
+  text-decoration: none;
 }
 
 /* Adjust footer link colors */
 #__docusaurus > footer > div > div.text--center > div > a {
   color: unset;
 }
-
 #__docusaurus > footer > div > div.text--center > div > a:hover {
   color: var(--ifm-link-color);
   text-decoration: underline;
