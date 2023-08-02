@@ -64,6 +64,11 @@ footer > div.col.text--right.col--3 > a::before {
   font-weight: var(--ifm-font-weight-bold);
 }
 
+/* Change article hash-link styling */
+a.hash-link:hover {
+  text-decoration: none;
+}
+
 /* Adjust footer link colors */
 #__docusaurus > footer > div > div.text--center > div > a {
   color: unset;
