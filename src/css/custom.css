@@ -55,6 +55,15 @@ h2[itemprop="headline"] > a:hover {
   text-decoration: none;
 }
 
+/* Modify blog article "Read More" link content */
+footer > div.col.text--right.col--3 > a > b {
+  display: none;
+}
+footer > div.col.text--right.col--3 > a::before {
+  content: "→ Read More";
+  font-weight: var(--ifm-font-weight-bold);
+}
+
 /* Adjust footer link colors */
 #__docusaurus > footer > div > div.text--center > div > a {
   color: unset;
