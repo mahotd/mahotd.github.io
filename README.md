@@ -2,6 +2,10 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+### Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/4cf7cd62340857763a683968c5717d456520e238.svg "Repobeats analytics image")
+
 ### Installation
 
 ```
