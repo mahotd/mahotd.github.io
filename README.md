@@ -1,46 +1,30 @@
 # Website
 
-This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/).
 
 ### Installation
 
+Clone the repository, then run:
+
 ```
-$ yarn
+$ npm install
 ```
 
 ### Local Development
 
 ```
-$ yarn start
+$ npm run start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The `main` branch is automatically deployed to GitHub Pages using GitHub Actions.
+See [this page](https://docusaurus.io/docs/deployment#deploying-to-github-pages) for more information.
 
 ### TODO
 
 - [ ] Add a search bar ?
 - [ ] Use `fontaine` to reduce Cumulative Layout Shift (https://blog.logrocket.com/docusaurus-using-fontaine-reduce-cumulative-layout-shift/)
+- [ ] Prevent clicking on author from opening a new tab
