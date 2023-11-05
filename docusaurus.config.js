@@ -1,21 +1,23 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "mahotd",
+  favicon: "img/favicon.ico",
+
   url: "https://mahotd.github.io/",
   baseUrl: "/",
+  trailingSlash: false,
+
   organizationName: "mahotd",
   projectName: "mahotd.github.io",
-  favicon: "img/favicon.ico?v=2",
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+
   deploymentBranch: "gh-pages",
-  trailingSlash: false,
 
   i18n: {
     defaultLocale: "en",
@@ -30,9 +32,13 @@ const config = {
         docs: false,
         blog: {
           routeBasePath: "/",
+
           blogTitle: "blog",
           blogDescription: "Mahot Descelliers's blog",
+
           blogSidebarCount: 10,
+          showReadingTime: true,
+
           editUrl: "https://github.com/mahotd/mahotd/edit/main/blog/",
         },
         theme: {
@@ -72,8 +78,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} <a href="/about">Mahot Descelliers</a>. Built with <a href="hhttps://github.com/facebook/docusaurus/">Docusaurus</a>.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 
@@ -102,4 +108,4 @@ const config = {
   ],
 };
 
-module.exports = config;
+export default config;
