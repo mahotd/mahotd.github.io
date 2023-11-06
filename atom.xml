@@ -15,32 +15,38 @@
         <summary type="html"><![CDATA[<Image]]></summary>
         <content type="html"><![CDATA[<div style="background-size:cover;background-repeat:no-repeat;position:relative;background-image:url(&quot;data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABQj/xAAgEAEAAQQCAgMAAAAAAAAAAAABAgADBBEFIRMxQWGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABoRAAICAwAAAAAAAAAAAAAAAAECAAMRITH/2gAMAwEAAhEDEQA/AJxxOMt3cLzvlZ9dGg79NEMZC9FL4fJZcOMnjW70oWURjEBR+F1vVGaPv9pWsmgojAxyf//Z&quot;);width:350px;display:block;margin:0 auto"><svg style="width:100%;height:auto;max-width:100%;margin-bottom:-4px" width="640" height="853"></svg><noscript><img style="width:100%;height:auto;max-width:100%;margin-bottom:-4px;position:absolute;top:0;left:0" src="/assets/ideal-img/glass-block-lamp-1.4d38d93.640.jpg" srcset="/assets/ideal-img/glass-block-lamp-1.4d38d93.640.jpg 640w,/assets/ideal-img/glass-block-lamp-1.8a57eae.1030.jpg 1030w" alt="The finished glass block lamp" width="640" height="853"></noscript></div>
 <br>
-<p>I love mood lighting, and my home is filled with various lava lamps, quirky bulbs, and other fun lights.<br>
-To add a personal touch to my collection, I thought it would be a fantastic idea to create one myself!
-I've had my eye on a glass block lamp for quite some time, and now it's the perfect opportunity to make it happen.
-To take the visual concept up a notch, I decided to incorporate some fancy RGB electronics 🌈.</p>
+<p>I have several decorative lamps in my home, but I've wanted to make one myself for a while.<br>
+I've had my eye on a glass block lamp for quite some time, and I thought it would be a
+good opportunity to make it happen. To take the visual concept up a notch, I decided to
+incorporate some fancy RGB electronics 🌈.</p>
+<!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="tools">Tools<a href="https://mahotd.github.io/glass-block-lamp#tools" class="hash-link" aria-label="Direct link to Tools" title="Direct link to Tools">​</a></h2>
 <ul>
-<li><strong>3D printer</strong> : I used my Prusa Mini+</li>
-<li><strong>soldering station</strong> : I used a Aixun T3B, <a href="https://youtu.be/Ds2Xq3dwV30" target="_blank" rel="noopener noreferrer">it's great</a></li>
-<li><strong>computer</strong> with Google Chrome, to configure the WLED software</li>
+<li><strong>3D printer</strong>: Prusa Mini+</li>
+<li><strong>soldering station</strong>: Aixun T3B (<a href="https://youtu.be/Ds2Xq3dwV30" target="_blank" rel="noopener noreferrer">it's good</a>)</li>
+<li><strong>computer</strong> (with Google Chrome, to configure the WLED software)</li>
 <li><strong>precision screwdrivers</strong></li>
-<li><strong>UV glue</strong> : I used <em>Bostik Fix &amp; Flash</em></li>
+<li><strong>UV glue</strong></li>
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="materials">Materials<a href="https://mahotd.github.io/glass-block-lamp#materials" class="hash-link" aria-label="Direct link to Materials" title="Direct link to Materials">​</a></h2>
 <p>For this project, I used the following materials:</p>
 <ul>
-<li><strong>Glass block</strong> : I used a 19x19x8cm one which I bough at my local hardware store, Leroy Merlin</li>
-<li><strong>ESP32</strong> microcontroller : I used an <a href="https://www.adafruit.com/product/5400" target="_blank" rel="noopener noreferrer">Adafruit ESP32 Feather V2</a></li>
+<li><strong>Glass block</strong>: 19x19x8cm block one which I bought at my local hardware store, Leroy Merlin</li>
+<li><strong>ESP32</strong> microcontroller: <a href="https://www.adafruit.com/product/5400" target="_blank" rel="noopener noreferrer">Adafruit ESP32 Feather V2</a></li>
 </ul>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>ESP32 microcontroller compatibility</div><div class="admonitionContent_BuS1"><p>WLED is currently not fully compatible with ESP32-S2, ESP32-S3 or ESP32-C3 microcontrollers, see <a href="https://github.com/Aircoookie/WLED/issues/966" target="_blank" rel="noopener noreferrer">#966</a>, <a href="https://github.com/Aircoookie/WLED/issues/2735" target="_blank" rel="noopener noreferrer">#2735</a>, <a href="https://github.com/Aircoookie/WLED/issues/1940" target="_blank" rel="noopener noreferrer">#1940</a>.
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>ESP32 microcontroller compatibility</div><div class="admonitionContent_BuS1"><p>WLED is currently not fully compatible with ESP32-S2, ESP32-S3 or ESP32-C3 microcontrollers, see
+<a href="https://github.com/Aircoookie/WLED/issues/966" target="_blank" rel="noopener noreferrer">Aircoookie/WLED#966</a>,
+<a href="https://github.com/Aircoookie/WLED/issues/2735" target="_blank" rel="noopener noreferrer">Aircoookie/WLED#2735</a>,
+<a href="https://github.com/Aircoookie/WLED/issues/1940" target="_blank" rel="noopener noreferrer">Aircoookie/WLED#1940</a>.
 Use a regular ESP32 to be sure.</p></div></div>
 <ul>
-<li><strong>3x RGBW NeoPixel sticks</strong> from Adafruit : I used <a href="https://www.adafruit.com/product/2867" target="_blank" rel="noopener noreferrer">these ones from Adafruit</a>. They're great but expensive... See the <a href="https://kno.wled.ge/basics/compatible-hardware/#addressable-led-strips" target="_blank" rel="noopener noreferrer">WLED Documentation</a> for compatibility with other LED strips.</li>
+<li><strong>3x RGBW NeoPixel sticks</strong> from Adafruit: <a href="https://www.adafruit.com/product/2867" target="_blank" rel="noopener noreferrer">RGBW NeoPixel Stick from Adafruit</a>.
+I'd recommend using <a href="https://www.adafruit.com/product/2847" target="_blank" rel="noopener noreferrer">high density flexible strips instead</a>,
+which are cheaper while offering nearly the same pixel density.</li>
 <li><strong>TSOP38238</strong> IR receiver</li>
 <li><a href="https://kno.wled.ge/interfaces/infrared/" target="_blank" rel="noopener noreferrer"><strong>IR remote</strong></a></li>
 <li><strong>10kΩ potentiometer</strong> for brightness setting, as recommended by the <a href="https://kno.wled.ge/features/macros/#global-brightness" target="_blank" rel="noopener noreferrer">WLED documentation</a></li>
-<li><strong>5V 3A USB-C power supply</strong> : I used one made for the Raspberry Pi 4</li>
+<li><strong>5V 3A USB-C power supply</strong>: I used one made for the Raspberry Pi 4, with a built-in switch</li>
 <li><strong>Black PLA</strong> (for the case assembly) and <strong>white PLA</strong> (for the diffuser)</li>
 <li><strong>Prototyping wire</strong></li>
 <li><strong>M2 screws</strong> and <strong>heat-set inserts</strong></li>
@@ -59,7 +65,7 @@ Use a regular ESP32 to be sure.</p></div></div>
 <li>write a note about sourcing glass blocks</li>
 <li>add project sources (stl, wled config, etc.). Maybe on GitHub ?</li>
 <li>add related documentation links (remove them from the text ?)</li>
-<li>Add improvement ideas</li>
+<li>add improvement ideas</li>
 </ul>]]></content>
         <author>
             <name>Mahot Descelliers</name>
