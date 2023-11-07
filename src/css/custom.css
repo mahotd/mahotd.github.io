@@ -56,11 +56,8 @@ h2[itemprop="headline"] > a:hover {
 }
 
 /* Modify blog article "Read More" link content */
-footer > div.col.text--right.col--3 > a > b {
-  display: none;
-}
 footer > div.col.text--right.col--3 > a::before {
-  content: "→ Read More";
+  content: "→ ";
   font-weight: var(--ifm-font-weight-bold);
 }
 
