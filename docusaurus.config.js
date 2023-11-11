@@ -75,7 +75,7 @@ const config = {
       },
       footer: {
         style: "light",
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="/about">Mahot Descelliers</a>. Built with <a href="hhttps://github.com/facebook/docusaurus/">Docusaurus</a>.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="/about">Mahot Descelliers</a>. Built with <a href="https://github.com/facebook/docusaurus/">Docusaurus</a>.`,
       },
       prism: {
         theme: prismThemes.github,
