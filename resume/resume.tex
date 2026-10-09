@@ -1,0 +1,79 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[left=1.6cm,right=1.6cm,top=1.4cm,bottom=1.4cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks,pdftitle={Mahot Descelliers - Resume},pdfauthor={Mahot Descelliers}]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\scshape\raggedright\large}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{6pt}
+
+\newcommand{\entry}[4]{%
+  \item \textbf{#1} \hfill #2 \\
+  \textit{\small #3} \hfill \textit{\small #4}}
+
+\newenvironment{entries}{\begin{itemize}[leftmargin=1.2em, itemsep=4pt, parsep=0pt, topsep=0pt]}{\end{itemize}}
+\newenvironment{details}{\begin{itemize}[label=$\circ$, leftmargin=1.5em, itemsep=0pt, parsep=0pt, topsep=2pt]\small}{\end{itemize}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  {\LARGE\textbf{Mahot Descelliers}} & GitHub: \href{https://github.com/mahotd}{github.com/mahotd} \\
+  \href{https://mahotd.github.io}{mahotd.github.io} & LinkedIn: \href{https://www.linkedin.com/in/mahotd/}{linkedin.com/in/mahotd} \\
+\end{tabular*}
+
+\section{Education}
+\begin{entries}
+  \entry{École Nationale d'Arts et Métiers}{}{M.Sc. Eng., Mechanical and Industrial Engineering}{2017 -- 2021}
+  \entry{Lycée Jean-Baptiste Say}{}{Preparatory classes (PCSI/PSI*), Physics, Math and Industrial Engineering}{2015 -- 2017}
+\end{entries}
+
+\section{Experience}
+\begin{entries}
+  \entry{Harmattan AI}{Paris, France}{Software Engineer}{2025 -- Present}
+  \begin{details}
+    \item Spending most of my time working on our C2 software.
+    \item Maintainer of several tools used across R\&D.
+    \item Defining and promoting software engineering best practices across the organization.
+  \end{details}
+
+  \entry{Withings}{Paris, France}{Data Engineer, ML team}{2021 -- 2025}
+  \begin{details}
+    \item Built tools and infrastructure to support algorithm development, certification,
+          deployment and observability.
+    \item Built and maintained several collecting, labeling and monitoring tools for my team and
+          the Clinical team.
+    \item Developed online and offline data collection tools, libraries, CI/CD tooling, internal
+          dashboarding tools and package-hosting infrastructure.
+    \item Defined, promoted and implemented software engineering best practices across the team.
+    \item Got involved in several side projects creating interactive displays using Withings
+          devices, for trade shows like CES or IFA.
+  \end{details}
+
+  \entry{Sysnav}{Paris, France}{R\&D Engineer intern}{2021}
+  \begin{details}
+    \item Worked on optimizing pedestrian navigation algorithms for the PLD (Personal Location
+          Device) program, a precision indoor/outdoor positioning system.
+    \item Developed and implemented new algorithmic features for the product.
+    \item Built replay and analysis tooling (log parsing, algorithm replay, trajectory
+          visualization and metrics computation) to support iterative optimization and
+          decision-making.
+    \item Designed test plans and generated evaluation datasets.
+    \item Gained hands-on experience with BLE Beacons, UWB, and LoRa communication protocols.
+  \end{details}
+
+  \entry{Akonite}{Paris, France}{Industrial Design intern}{2018}
+  \begin{details}
+    \item Preliminary industrial design project for an innovative fire safety enclosure.
+    \item Design work on bespoke pieces for luxury brands.
+    \item Redesign of components in Akonite's board sports range.
+  \end{details}
+\end{entries}
+
+\end{document}

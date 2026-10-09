@@ -12,6 +12,17 @@ make dev
 
 Then open <http://localhost:8000>.
 
+## Resume
+
+`resume.pdf` is built from `resume/resume.tex` with [Tectonic](https://tectonic-typesetting.github.io/).
+After a change to the source, run:
+
+```sh
+make resume
+```
+
+Then commit the new `resume.pdf`.
+
 ## Deployment
 
 GitHub Pages is used to serve the root of the `main` branch.
