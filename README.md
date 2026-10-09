@@ -7,7 +7,7 @@ Bare-minimal personal website.
 From the repository root, run:
 
 ```sh
-python3 -m http.server 8000
+make dev
 ```
 
 Then open <http://localhost:8000>.
