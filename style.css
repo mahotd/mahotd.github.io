@@ -63,6 +63,10 @@ h3 {
   font-size: 0.9em;
   opacity: 0.75;
 }
+.avatar {
+  display: block;
+  image-rendering: pixelated;
+}
 .links {
   list-style: none;
   padding: 0;
