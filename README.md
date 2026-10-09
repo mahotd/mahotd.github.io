@@ -1,30 +1,17 @@
-# Website
+# mahotd.github.io
 
-This website is built using [Docusaurus 3](https://docusaurus.io/).
+Bare-minimal personal website.
 
-### Installation
+## Local development
 
-Clone the repository, then run:
+From the repository root, run:
 
-```
-$ npm install
-```
-
-### Local Development
-
-```
-$ npm run start
+```sh
+python3 -m http.server 8000
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Then open <http://localhost:8000>.
 
-### Deployment
+## Deployment
 
-The `main` branch is automatically deployed to GitHub Pages using GitHub Actions.
-See [this page](https://docusaurus.io/docs/deployment#deploying-to-github-pages) for more information.
-
-### TODO
-
-- [ ] Add a search bar ?
-- [ ] Use `fontaine` to reduce Cumulative Layout Shift (https://blog.logrocket.com/docusaurus-using-fontaine-reduce-cumulative-layout-shift/)
-- [ ] Prevent clicking on author from opening a new tab
+GitHub Pages is used to serve the root of the `main` branch.
