@@ -64,3 +64,48 @@ h3 {
   list-style: none;
   padding: 0;
 }
+:root:has(.theme [value="dark"]:checked) {
+  color-scheme: dark;
+}
+:root:has(.theme [value="light"]:checked) {
+  color-scheme: light;
+}
+.theme {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
+.theme label {
+  cursor: pointer;
+}
+.theme label::before {
+  content: "[";
+}
+.theme label::after {
+  content: "]";
+}
+.theme input {
+  position: absolute;
+  opacity: 0;
+}
+.theme label:has(:checked) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+@media (prefers-color-scheme: light) {
+  .theme:not(:has(:checked)) label:has([value="light"]) {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .theme:not(:has(:checked)) label:has([value="dark"]) {
+    display: none;
+  }
+}
+.theme label:hover,
+.theme:has(:focus-visible) label {
+  text-decoration: underline;
+}
