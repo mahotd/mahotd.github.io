@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("fonts/geist-mono-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist Mono";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("fonts/geist-mono-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Geist Pixel";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/geist-pixel-square.woff2") format("woff2");
+}
+
+:root {
+  color-scheme: light dark;
+}
+body {
+  max-width: 40em;
+  margin: 4em auto;
+  padding: 0 1em;
+  font:
+    15px/1.6 "Geist Mono",
+    monospace;
+}
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+h1,
+h2 {
+  font-family: "Geist Pixel", monospace;
+}
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  margin-top: 2em;
+  font-size: 1.8em;
+}
+h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  font-size: 1em;
+}
+.meta {
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 0.9em;
+  opacity: 0.75;
+}
+.links {
+  list-style: none;
+  padding: 0;
+}
