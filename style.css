@@ -116,3 +116,13 @@ h3 {
 .theme:has(:focus-visible) label {
   text-decoration: underline;
 }
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-new(root) {
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  image-rendering: pixelated;
+}
