@@ -58,8 +58,64 @@ small a:hover {
       -1px 0;
   }
 }
+.terminal {
+  width: min(36em, 100% - 2em);
+  padding: 1em;
+  border: 2px solid;
+  box-shadow: 4px 4px 0;
+  color: inherit;
+  background: light-dark(#f9f9f1, #14161e);
+  font: inherit;
+}
+.terminal[open] {
+  animation: glitch 0.25s steps(1);
+}
+.terminal::backdrop {
+  background: repeating-conic-gradient(
+      #14161e 0 25%,
+      transparent 0 50%,
+      light-dark(transparent, #14161e) 0 75%,
+      transparent 0
+    )
+    0 0 / 4px 4px;
+}
+.terminal .output {
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 1ch;
+  white-space: pre-wrap;
+}
+.terminal .output::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal .output::-webkit-scrollbar-thumb {
+  background: currentColor;
+}
+.terminal .output::-webkit-scrollbar-track {
+  background: repeating-conic-gradient(currentColor 0 25%, transparent 0 50%) 0 0 / 4px 4px;
+}
+@supports not selector(::-webkit-scrollbar) {
+  .terminal .output {
+    scrollbar-width: thin;
+    scrollbar-color: currentColor transparent;
+  }
+}
+.terminal label {
+  display: flex;
+  gap: 1ch;
+}
+.terminal input {
+  flex: 1;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  background: none;
+  font: inherit;
+}
 @media (prefers-reduced-motion: reduce) {
-  small a:hover {
+  small a:hover,
+  .terminal[open] {
     animation: none;
   }
 }
