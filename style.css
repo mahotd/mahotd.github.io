@@ -39,6 +39,30 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+small a:hover {
+  animation: glitch 0.25s steps(1);
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0;
+  }
+  25% {
+    text-shadow: -2px -1px;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    text-shadow:
+      1px 1px,
+      -1px 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  small a:hover {
+    animation: none;
+  }
+}
 h1,
 h2 {
   font-family: "Geist Pixel", monospace;
