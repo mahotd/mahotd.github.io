@@ -14,7 +14,7 @@ Then open <http://localhost:8000>.
 
 ## Resume
 
-`resume.pdf` is built from `resume/resume.tex` with [Tectonic](https://tectonic-typesetting.github.io/).
+`resume.pdf` is built from `resume.tex` with [Tectonic](https://tectonic-typesetting.github.io/).
 After a change to the source, run:
 
 ```sh

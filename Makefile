@@ -5,5 +5,5 @@ dev:
 
 resume: resume.pdf
 
-resume.pdf: resume/resume.tex
-	SOURCE_DATE_EPOCH=$$(git log -1 --format=%ct -- $<) tectonic $< -o .
+resume.pdf: resume.tex
+	SOURCE_DATE_EPOCH=$$(git log -1 --format=%ct -- $< | grep . || date +%s) tectonic $< -o .
