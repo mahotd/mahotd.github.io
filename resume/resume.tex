@@ -15,65 +15,97 @@
 \titlespacing{\section}{0pt}{8pt}{6pt}
 
 \newcommand{\entry}[4]{%
-  \item \textbf{#1} \hfill #2 \\
-  \textit{\small #3} \hfill \textit{\small #4}}
+\item \textbf{#1} \hfill #2 \\
+\textit{\small #3} \hfill \textit{\small #4}}
 
-\newenvironment{entries}{\begin{itemize}[leftmargin=1.2em, itemsep=4pt, parsep=0pt, topsep=0pt]}{\end{itemize}}
-\newenvironment{details}{\begin{itemize}[label=$\circ$, leftmargin=1.5em, itemsep=0pt, parsep=0pt, topsep=2pt]\small}{\end{itemize}}
+\newenvironment{entries}{
+\begin{itemize}[leftmargin=1.2em, itemsep=4pt, parsep=0pt, topsep=0pt]}{
+\end{itemize}}
+\newenvironment{details}{
+\begin{itemize}[label=$\circ$, leftmargin=1.5em, itemsep=0pt, parsep=0pt, topsep=2pt]\small}{
+\end{itemize}}
 
 \begin{document}
 
-\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
-  {\LARGE\textbf{Mahot Descelliers}} & GitHub: \href{https://github.com/mahotd}{github.com/mahotd} \\
-  \href{https://mahotd.github.io}{mahotd.github.io} & LinkedIn: \href{https://www.linkedin.com/in/mahotd/}{linkedin.com/in/mahotd} \\
-\end{tabular*}
+\begin{minipage}[t]{0.58\textwidth}
+  {\LARGE\textbf{Mahot Descelliers}} \\[4pt]
+  \raggedright
+  \small\textit{I'm a Software Engineer who especially cares about developer experience,
+    maintainability, software engineering practices, and finding clean and elegant solutions
+  to tricky problems.}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.4\textwidth}
+  \raggedleft
+  \href{https://mahotd.github.io}{mahotd.github.io} \\
+  \href{https://github.com/mahotd}{github.com/mahotd} \\
+  \href{https://www.linkedin.com/in/mahotd/}{linkedin.com/in/mahotd}
+\end{minipage}
 
 \section{Education}
 \begin{entries}
-  \entry{École Nationale d'Arts et Métiers}{}{M.Sc. Eng., Mechanical and Industrial Engineering}{2017 -- 2021}
-  \entry{Lycée Jean-Baptiste Say}{}{Preparatory classes (PCSI/PSI*), Physics, Math and Industrial Engineering}{2015 -- 2017}
+  \entry{École Nationale d'Arts et Métiers}{Paris, France}{M.Sc. Eng., Mechanical and
+  Industrial Engineering}{2017 -- 2021}
+  \entry{Lycée Jean-Baptiste Say}{Paris, France}{Preparatory classes (PCSI/PSI*),
+  Physics, Math and Industrial Engineering}{2015 -- 2017}
 \end{entries}
 
 \section{Experience}
 \begin{entries}
   \entry{Harmattan AI}{Paris, France}{Software Engineer}{2025 -- Present}
   \begin{details}
-    \item Spending most of my time working on our C2 software.
-    \item Maintainer of several tools used across R\&D.
-    \item Defining and promoting software engineering best practices across the organization.
+  \item \textbf{C2 software}: architecture, core development, integration, deployment and
+    infrastructure.
+  \item \textbf{Tooling}: maintainer of several tools used across R\&D.
+  \item \textbf{Engineering}: defining and promoting software engineering best practices
+    in the company.
   \end{details}
 
-  \entry{Withings}{Paris, France}{Data Engineer, ML team}{2021 -- 2025}
+  \entry{Withings}{Paris, France}{Software Engineer, ML}{2021 -- 2025}
   \begin{details}
-    \item Built tools and infrastructure to support algorithm development, certification,
-          deployment and observability.
-    \item Built and maintained several collecting, labeling and monitoring tools for my team and
-          the Clinical team.
-    \item Developed online and offline data collection tools, libraries, CI/CD tooling, internal
-          dashboarding tools and package-hosting infrastructure.
-    \item Defined, promoted and implemented software engineering best practices across the team.
-    \item Got involved in several side projects creating interactive displays using Withings
-          devices, for trade shows like CES or IFA.
+  \item \textbf{ML infrastructure}: tools for algorithm development, certification,
+    deployment and observability.
+  \item \textbf{Data collection \& labeling}: online/offline collecting, labeling and
+    monitoring tools.
+  \item \textbf{Developer tooling}: libraries, CI/CD, dashboards, package hosting.
+  \item \textbf{Engineering}: defined and implemented best practices across the team.
+  \item \textbf{Side projects}: immersive experiences for CES and IFA.
   \end{details}
 
   \entry{Sysnav}{Paris, France}{R\&D Engineer intern}{2021}
   \begin{details}
-    \item Worked on optimizing pedestrian navigation algorithms for the PLD (Personal Location
-          Device) program, a precision indoor/outdoor positioning system.
-    \item Developed and implemented new algorithmic features for the product.
-    \item Built replay and analysis tooling (log parsing, algorithm replay, trajectory
-          visualization and metrics computation) to support iterative optimization and
-          decision-making.
-    \item Designed test plans and generated evaluation datasets.
-    \item Gained hands-on experience with BLE Beacons, UWB, and LoRa communication protocols.
+  \item \textbf{Navigation algorithms}: optimizing navigation algorithms for the
+    indoor/outdoor pedestrian location device.
+  \item \textbf{Analysis tooling}: replay, log parsing, trajectory visualization.
+  \item \textbf{Testing}: test plans and evaluation datasets.
+  \item \textbf{Technologies}: BLE, UWB, LoRa.
+  \end{details}
+
+  \entry{JAD Technology}{Paris, France}{Co-Founder}{2019 -- 2020}
+  \begin{details}
+  \item UHF RFID traceability solutions for Industry 4.0 and IoT applications.
+  \item \textbf{Smart cabinet}: production tool storage for Groupe Renault, from proof of concept to
+    industrialization.
+  \item \textbf{Traceability platform}: real-time asset tracking web application, and an end-to-end
+    solution for a meal delivery service (inventory, tracking and order verification).
+  \item \textbf{Technologies}: RFID UHF RAIN, MIFARE, IoT protocols, EPCglobal/GS1 standards.
   \end{details}
 
   \entry{Akonite}{Paris, France}{Industrial Design intern}{2018}
   \begin{details}
-    \item Preliminary industrial design project for an innovative fire safety enclosure.
-    \item Design work on bespoke pieces for luxury brands.
-    \item Redesign of components in Akonite's board sports range.
+  \item \textbf{Luxury pieces}: bespoke design work.
+  \item \textbf{Fire safety enclosure}: preliminary industrial design.
+  \item \textbf{Board sports}: component redesign.
   \end{details}
+\end{entries}
+
+\section{Skills}
+\begin{entries}
+\item \textbf{Programming languages}: Python, TypeScript, SQL, Rust, Bash.
+\item \textbf{Technologies}: Docker, Terraform, GitHub Actions, Ansible, Next.js,
+  Electron, FastAPI, Turborepo.
+\item \textbf{Others}: CAD modeling, 3D printing, PCB design, sewing, silversmithing,
+  metalworking.
 \end{entries}
 
 \end{document}
