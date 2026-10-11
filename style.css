@@ -40,7 +40,9 @@ a {
   text-underline-offset: 3px;
 }
 small a:hover {
-  animation: glitch 0.25s steps(1);
+  animation:
+    glitch 0.25s steps(1),
+    blink 0.25s steps(1);
 }
 @keyframes glitch {
   0% {
@@ -49,13 +51,18 @@ small a:hover {
   25% {
     text-shadow: -2px -1px;
   }
-  50% {
-    opacity: 0;
-  }
   75% {
     text-shadow:
       1px 1px,
       -1px 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
   }
 }
 .terminal {
@@ -66,9 +73,6 @@ small a:hover {
   color: inherit;
   background: light-dark(#f9f9f1, #14161e);
   font: inherit;
-}
-.terminal[open] {
-  animation: glitch 0.25s steps(1);
 }
 .terminal::backdrop {
   background: repeating-conic-gradient(
@@ -114,8 +118,7 @@ small a:hover {
   font: inherit;
 }
 @media (prefers-reduced-motion: reduce) {
-  small a:hover,
-  .terminal[open] {
+  small a:hover {
     animation: none;
   }
 }
