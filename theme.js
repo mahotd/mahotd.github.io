@@ -11,15 +11,17 @@ try {
   if (input) input.checked = true;
 } catch {}
 
-const cell = 3;
-const frameCount = 12;
+const cell = 2;
+const fps = 50;
+const duration = 400;
+const frames = Math.max(2, Math.round((fps * duration) / 1000));
 const maxPixels = 16_000_000;
 const bayer = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5];
 
 const ditherSprite = (originX, originY) => {
   const size = Math.max(
     cell,
-    Math.ceil(Math.sqrt((innerWidth * innerHeight * (frameCount + 1)) / maxPixels)),
+    Math.ceil(Math.sqrt((innerWidth * innerHeight * frames) / maxPixels)),
   );
   const width = Math.ceil(innerWidth / size);
   const height = Math.ceil(innerHeight / size);
@@ -36,13 +38,13 @@ const ditherSprite = (originX, originY) => {
   }
   const canvas = document.createElement("canvas");
   canvas.width = width;
-  canvas.height = height * (frameCount + 1);
+  canvas.height = height * frames;
   const context = canvas.getContext("2d", { willReadFrequently: true });
   const image = context.createImageData(canvas.width, canvas.height);
   const { data } = image;
   thresholds.forEach((threshold, i) => {
-    const first = Math.min(frameCount, Math.max(0, Math.floor(threshold * frameCount) + 1));
-    for (let frame = first; frame <= frameCount; frame++) {
+    const first = Math.min(frames - 1, Math.max(0, Math.floor(threshold * (frames - 1)) + 1));
+    for (let frame = first; frame < frames; frame++) {
       data[(frame * width * height + i) * 4 + 3] = 255;
     }
   });
@@ -71,12 +73,12 @@ theme.addEventListener("click", (e) => {
     document.documentElement.animate(
       {
         maskImage: [sprite, sprite],
-        maskSize: [`100% ${(frameCount + 1) * 100}%`, `100% ${(frameCount + 1) * 100}%`],
+        maskSize: [`100% ${frames * 100}%`, `100% ${frames * 100}%`],
         maskPosition: ["0 0%", "0 100%"],
       },
       {
-        duration: 400,
-        easing: `steps(${frameCount + 1}, jump-none)`,
+        duration,
+        easing: `steps(${frames}, jump-none)`,
         pseudoElement: "::view-transition-new(root)",
       },
     ),
