@@ -20,36 +20,38 @@
     <script src="../terminal.js" defer></script>
     <p><a href="../">← back</a></p>
 
-    <h1>dither</h1>
-    <p>
-      Upload an image or use your webcam.<br>
-      Frontend only.
-    </p>
+    <main>
+      <h1>dither</h1>
+      <p>
+        Upload an image or use your webcam.<br>
+        Frontend only.
+      </p>
 
-    <form class="dither">
-      <p>
-        <label class="button"><input type="file" accept="image/*" />open image</label>
-        <button type="button" class="button" id="webcam">webcam</button>
-      </p>
-      <p>
-        <label class="choice"><input type="radio" name="algorithm" value="bayer" checked />bayer</label>
-        <label class="choice"
-          ><input type="radio" name="algorithm" value="floyd-steinberg" />floyd-steinberg</label
-        >
-        <label class="choice"><input type="radio" name="algorithm" value="atkinson" />atkinson</label>
-      </p>
-      <p>
-        <label>pixel size <input type="range" name="pixel" min="1" max="8" value="2" /></label>
-        <label
-          >threshold <input type="range" name="threshold" min="0" max="1" step="0.01" value="0.5"
-        /></label>
-      </p>
-      <canvas></canvas>
-      <p>
-        <button type="button" class="button" id="save">save</button>
-      </p>
-      <p class="status" role="status"></p>
-    </form>
+      <form class="dither">
+        <p>
+          <label class="button"><input type="file" accept="image/*" />open image</label>
+          <button type="button" class="button" id="webcam">webcam</button>
+        </p>
+        <p>
+          <label class="choice"><input type="radio" name="algorithm" value="bayer" checked />bayer</label>
+          <label class="choice"
+            ><input type="radio" name="algorithm" value="floyd-steinberg" />floyd-steinberg</label
+          >
+          <label class="choice"><input type="radio" name="algorithm" value="atkinson" />atkinson</label>
+        </p>
+        <p>
+          <label>pixel size <input type="range" name="pixel" min="1" max="8" value="2" /></label>
+          <label
+            >threshold <input type="range" name="threshold" min="0" max="1" step="0.01" value="0.5"
+          /></label>
+        </p>
+        <canvas></canvas>
+        <p>
+          <button type="button" class="button" id="save">save</button>
+        </p>
+        <p class="status" role="status"></p>
+      </form>
+    </main>
     <script type="module" src="dither.js"></script>
   </body>
 </html>
