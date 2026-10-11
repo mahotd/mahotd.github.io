@@ -18,7 +18,7 @@ const frames = Math.max(2, Math.round((fps * duration) / 1000));
 const maxPixels = 16_000_000;
 const bayer = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5];
 
-const ditherSprite = (originX, originY) => {
+const ditherCanvas = (originX, originY) => {
   const size = Math.max(
     cell,
     Math.ceil(Math.sqrt((innerWidth * innerHeight * frames) / maxPixels)),
@@ -49,8 +49,39 @@ const ditherSprite = (originX, originY) => {
     }
   });
   context.putImageData(image, 0, 0);
-  return `url(${canvas.toDataURL()})`;
+  return canvas;
 };
+
+const origin = () => {
+  const rect = theme.getBoundingClientRect();
+  return [rect.x + rect.width / 2, rect.y + rect.height / 2];
+};
+
+let sprite = null;
+let spriteImage = null;
+let version = 0;
+
+const prepare = () => {
+  const current = ++version;
+  ditherCanvas(...origin()).toBlob((blob) => {
+    if (current !== version) return;
+    if (spriteImage) URL.revokeObjectURL(spriteImage.src);
+    spriteImage = new Image();
+    spriteImage.src = URL.createObjectURL(blob);
+    sprite = `url(${spriteImage.src})`;
+  });
+};
+
+const schedule = () => (window.requestIdleCallback ?? setTimeout)(prepare);
+
+let resizeTimer;
+addEventListener("resize", () => {
+  sprite = null;
+  version++;
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(schedule, 200);
+});
+schedule();
 
 theme.addEventListener("change", (e) => save(e.target.value));
 
@@ -63,8 +94,7 @@ theme.addEventListener("click", (e) => {
   )
     return;
   e.preventDefault();
-  const label = input.closest("label").getBoundingClientRect();
-  const sprite = ditherSprite(label.x + label.width / 2, label.y + label.height / 2);
+  const mask = sprite ?? `url(${ditherCanvas(...origin()).toDataURL()})`;
   const transition = document.startViewTransition(() => {
     input.checked = true;
     save(input.value);
@@ -72,7 +102,7 @@ theme.addEventListener("click", (e) => {
   transition.ready.then(() =>
     document.documentElement.animate(
       {
-        maskImage: [sprite, sprite],
+        maskImage: [mask, mask],
         maskSize: [`100% ${frames * 100}%`, `100% ${frames * 100}%`],
         maskPosition: ["0 0%", "0 100%"],
       },
