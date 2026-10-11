@@ -208,3 +208,85 @@ h3 {
   mask-repeat: no-repeat;
   image-rendering: pixelated;
 }
+.dither p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 2ch;
+}
+.button,
+.choice {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.button::before,
+.choice::before {
+  content: "[";
+}
+.button::after,
+.choice::after {
+  content: "]";
+}
+.button input,
+.choice input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+.button:hover,
+.choice:hover,
+.button:focus-visible,
+.button:has(:focus-visible),
+.choice:has(:focus-visible) {
+  text-decoration: underline;
+}
+.choice:has(:checked) {
+  color: light-dark(#f9f9f1, #14161e);
+  background: light-dark(#14161e, #f9f9f1);
+}
+.dither input[type="range"] {
+  appearance: none;
+  width: 10em;
+  height: 14px;
+  margin: 0;
+  vertical-align: middle;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+}
+.dither input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: repeating-conic-gradient(currentColor 0 25%, transparent 0 50%) 0 0 / 4px 4px;
+}
+.dither input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: repeating-conic-gradient(currentColor 0 25%, transparent 0 50%) 0 0 / 4px 4px;
+}
+.dither input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 8px;
+  height: 14px;
+  margin-top: -4px;
+  border: none;
+  border-radius: 0;
+  background: currentColor;
+}
+.dither input[type="range"]::-moz-range-thumb {
+  width: 8px;
+  height: 14px;
+  border: none;
+  border-radius: 0;
+  background: currentColor;
+}
+.dither canvas {
+  display: block;
+  width: 100%;
+  image-rendering: pixelated;
+}
+.status:empty {
+  display: none;
+}

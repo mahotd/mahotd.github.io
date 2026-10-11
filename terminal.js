@@ -19,6 +19,7 @@ const paths = {
   "work/": "/about/#work",
   "education/": "/about/#education",
   "socials/": "/about/#socials",
+  "dither/": "/dither/",
   "resume.pdf": "/resume.pdf",
 };
 
