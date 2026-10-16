@@ -1,4 +1,4 @@
-# mahotd.github.io
+# mahot.dev
 
 Bare-minimal personal website.
 
@@ -25,4 +25,4 @@ Then commit the new `resume.pdf`.
 
 ## Deployment
 
-GitHub Pages is used to serve the root of the `main` branch.
+GitHub Pages is used to serve the root of the `main` branch at <https://mahot.dev>.
